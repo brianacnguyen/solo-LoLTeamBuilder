@@ -17,28 +17,27 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
+  > League of Legends Balanced Team Builder.
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > For Rioters looking to build the dream team.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > This application helps you build the perfect team for your game on Summoner's Rift based on your choice of champions. Simply pick the position and champion you'd like to play and see your dream (team) comes true. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Often, when picking a champion within a team, a Rioter simply chooses any champion he wants. For those who are experienced with League of Legends, they strategize on picking the best champion combinations to create a well-balanced team that could increase their chance of winning the match. For those who are less experienced, the blind-pick strategy can sometimes be detrimental.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > This application can give both experienced and inexperienced players recommendations for champion selects based on the characters that have been taken or the characters that he wants to play.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > "I hope this app will help new Rioters and players who are inexperienced with different champions have a better understanding of the game. "
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Pick the position and champion you'd like to play/have been selected and you will get recommendations for other champions. 
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "Being a new Rioter myself, this app really helped me understand what champion works well with others. It really helped me explore many other champions based on my favorite champion, which is Teemo"
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > This code is based on official data and player experience. Please email me at ... if you'd have a recommendation you'd like to add to the app. Have fun.
