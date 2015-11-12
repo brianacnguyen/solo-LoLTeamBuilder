@@ -5,7 +5,7 @@
     <title>League of Legends- Team Builder</title>
 </head>
 
-<body>
+<body ng-app="app">
     <!--    DEPENDENCIES    -->
 
     <script src="bower_components/angular/angular.js"></script>
@@ -19,21 +19,22 @@
 
 		<!--    DATA            -->
 
-		<script src="data/champions.js"></script>
-		<script src="data/friends.js"></script>
+		<script src="data/data.js"></script>
 
+		<!--    Angular Controller            -->
+		<script src="selectionController.js"></script>
     <!-- --> 
 
     <h1 style="text-align: center;">League of Legends</h1>
     <h2 style="text-align: center;">Team Builder</h2>
-    <table align="center" border="0" cellpadding="1" cellspacing="1">
+    <table align="center" border="0" cellpadding="1" cellspacing="1" ng-controller="ChampsController">
         <tbody class="center">
             <tr>
-                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
-                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
-                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
-                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
-                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+                <td><img class="champ-image" src={{data.topChamp}} /></td>
+                <td><img class="champ-image" src={{data.jungleChamp}} /></td>
+                <td><img class="champ-image" src={{data.midChamp}} /></td>
+                <td><img class="champ-image" src={{data.botChamp}} /></td>
+                <td><img class="champ-image" src={{data.supportChamp}} /></td>
             </tr>
             <tr>
                 <td>Top</td>
@@ -44,28 +45,28 @@
             </tr>
             <tr>
                 <td>
-                    <select name="top-champions">
-                        <option value="Aatrox">Aatrox</option>
+                    <select name="top-champions" ng-model="data.topChamp">
+                        <option ng-repeat="champ in data.champs | filter: data.topSort" value="{{champ.image}}">{{champ.name}}</option>
                     </select>
                 </td>
                 <td>
-                    <select name="jungle-champions">
-                        <option value="Aatrox">Aatrox</option>
+                    <select name="jungle-champions" ng-model="data.jungleChamp">
+                        <option ng-repeat="champ in data.champs | filter: data.jungleSort" value="{{champ.image}}">{{champ.name}}</option>
                     </select>
                 </td>
                 <td>
-                    <select name="mid-champions">
-                        <option value="Aatrox">Aatrox</option>
+                    <select name="mid-champions" ng-model="data.midChamp">
+                        <option ng-repeat="champ in data.champs | filter: data.midSort" value="{{champ.image}}">{{champ.name}}</option>
                     </select>
                 </td>
                 <td>
-                    <select name="bot-champions">
-                        <option value="Aatrox">Aatrox</option>
+                    <select name="bot-champions" ng-model="data.botChamp">
+                        <option ng-repeat="champ in data.champs | filter: data.botSort" value="{{champ.image}}">{{champ.name}}</option>
                     </select>
                 </td>
                 <td>
-                    <select name="support-champions">
-                        <option value="Aatrox">Aatrox</option>
+                    <select name="support-champions" ng-model="data.supportChamp">
+                        <option ng-repeat="champ in data.champs | filter: data.supportSort" value="{{champ.image}}">{{champ.name}}</option>
                     </select>
                 </td>
             </tr>

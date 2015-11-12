@@ -78,7 +78,7 @@ var champs = [
   {"champId" : "77", "name" : "Poppy", "primaryRole": "fighter", "secondaryRole": "assassin", "primaryPosition" : "top", "secondaryPosition" : "jungle"},
   {"champId" : "78", "name" : "Quinn", "primaryRole": "marksman", "secondaryRole": "fighter", "primaryPosition" : "bottom", "secondaryPosition" : "top"},
   {"champId" : "79", "name" : "Rammus", "primaryRole": "tank", "secondaryRole": "fighter", "primaryPosition" : "jungle", "secondaryPosition" : "top"},
-  {"champId" : "80", "name" : "Reksai", "primaryRole": "fighter", "secondaryRole": null, "primaryPosition" : "jungle", "secondaryPosition" : "top"},
+  {"champId" : "80", "name" : "RekSai", "primaryRole": "fighter", "secondaryRole": null, "primaryPosition" : "jungle", "secondaryPosition" : "top"},
   {"champId" : "81", "name" : "Renekton", "primaryRole": "fighter", "secondaryRole": "tank", "primaryPosition" : "top", "secondaryPosition" : "jungle"},
   {"champId" : "82", "name" : "Rengar", "primaryRole": "assassin", "secondaryRole": "fighter", "primaryPosition" : "top", "secondaryPosition" : "jungle"},
   {"champId" : "83", "name" : "Riven", "primaryRole": "fighter", "secondaryRole": "assassin", "primaryPosition" : "top", "secondaryPosition" : "jungle"},
