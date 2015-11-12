@@ -1,4 +1,4 @@
-var league = [
+var champs = [
   {"champId" : "1", "name" : "Aatrox", "primaryRole": "fighter", "secondaryRole": "tank", "primaryPosition" : "top", "secondaryPosition" : "jungle"},
   {"champId" : "2", "name" : "Ahri", "primaryRole": "mage", "secondaryRole": "assassin", "primaryPosition" : "middle", "secondaryPosition" : null},
   {"champId" : "3", "name" : "Akali", "primaryRole": "assassin", "secondaryRole": null, "primaryPosition" : "middle", "secondaryPosition" : "top"},

@@ -1,0 +1,15 @@
+table {
+	align: center;
+	border: 0; 
+	cellpadding: 1;
+	cellspacing: 1;
+	width: 1000px;
+}
+.champ-image {
+	height: 273px; 
+	width: 150px;
+}
+.center {
+	align: center;
+	text-align: center;
+}

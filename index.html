@@ -1,38 +1,76 @@
 <!doctype html>
 <html>
+
 <head>
-	<title>League of Legends- Team Builder</title>
+    <title>League of Legends- Team Builder</title>
 </head>
+
 <body>
-<h1 style="text-align: center;">League of Legends</h1>
+    <!--    DEPENDENCIES    -->
 
-<h2 style="text-align: center;">Team Builder</h2>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
 
-<table align="center" border="0" cellpadding="1" cellspacing="1" style="width:1000px;">
-	<tbody>
-		<tr>
-			<td><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" style="height: 273px; width: 150px;" /></td>
-			<td><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" style="height: 273px; width: 150px;" /></td>
-			<td><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" style="height: 273px; width: 150px;" /></td>
-			<td><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" style="height: 273px; width: 150px;" /></td>
-			<td><img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" style="height: 273px; width: 150px;" /></td>
-		</tr>
-		<tr>
-			<td style="text-align: center;">Top</td>
-			<td style="text-align: center;">Jungle</td>
-			<td style="text-align: center;">Mid</td>
-			<td style="text-align: center;">Bottom</td>
-			<td style="text-align: center;">Support</td>
-		</tr>
-		<tr>
-			<td style="text-align: center;"><select name="Top Champions"><option value="Aatrox">Aatrox</option></select></td>
-			<td style="text-align: center;"><select name="Top Champions"><option value="Aatrox">Aatrox</option></select></td>
-			<td style="text-align: center;"><select name="Top Champions"><option value="Aatrox">Aatrox</option></select></td>
-			<td style="text-align: center;"><select name="Top Champions"><option value="Aatrox">Aatrox</option></select></td>
-			<td style="text-align: center;"><select name="Top Champions"><option value="Aatrox">Aatrox</option></select></td>
-		</tr>
-	</tbody>
-</table>
+		<!--    STYLES            -->
 
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+		<!--    DATA            -->
+
+		<script src="data/champions.js"></script>
+		<script src="data/friends.js"></script>
+
+    <!-- --> 
+
+    <h1 style="text-align: center;">League of Legends</h1>
+    <h2 style="text-align: center;">Team Builder</h2>
+    <table align="center" border="0" cellpadding="1" cellspacing="1">
+        <tbody class="center">
+            <tr>
+                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+                <td><img class="champ-image" src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" /></td>
+            </tr>
+            <tr>
+                <td>Top</td>
+                <td>Jungle</td>
+                <td>Mid</td>
+                <td>Bottom</td>
+                <td>Support</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="top-champions">
+                        <option value="Aatrox">Aatrox</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="jungle-champions">
+                        <option value="Aatrox">Aatrox</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="mid-champions">
+                        <option value="Aatrox">Aatrox</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="bot-champions">
+                        <option value="Aatrox">Aatrox</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="support-champions">
+                        <option value="Aatrox">Aatrox</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
