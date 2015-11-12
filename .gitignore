@@ -33,3 +33,12 @@ bower_components/
 .floobit
 .floo
 .flooignore
+
+# Build files
+public/dist/
+
+# Node modules
+node_modules/
+
+# WebStorm files
+.idea/

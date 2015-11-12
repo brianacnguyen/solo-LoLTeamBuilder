@@ -31,13 +31,13 @@ Once the project moves into development, the press release can be used as a touc
   > This application can give both experienced and inexperienced players recommendations for champion selects based on the characters that have been taken or the characters that he wants to play.
 
 ## Quote from You ##
-  > "I hope this app will help new Rioters and players who are inexperienced with different champions have a better understanding of the game. "
+  > "I hope this app will help new Rioters and players who are inexperienced with different champions have a better understanding of the game. " -Brian
 
 ## How to Get Started ##
   > Pick the position and champion you'd like to play/have been selected and you will get recommendations for other champions. 
 
 ## Customer Quote ##
-  > "Being a new Rioter myself, this app really helped me understand what champion works well with others. It really helped me explore many other champions based on my favorite champion, which is Teemo"
+  > "Being a new Rioter myself, this app really helped me understand what champion works well with others. It really helped me explore many other champions based on my favorite champion, which is Teemo" - Satan
 
 ## Closing and Call to Action ##
   > This code is based on official data and player experience. Please email me at ... if you'd have a recommendation you'd like to add to the app. Have fun.
