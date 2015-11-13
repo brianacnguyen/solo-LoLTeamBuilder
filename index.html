@@ -18,6 +18,9 @@
     <!--    Angular Controller            -->
     <script src="ChampsController.js"></script>
     <!-- -->
+    <audio id="dancenow" autoplay loop>
+      <source src="data/bg.mp3" />
+    </audio>  
     <section class="bg">
         <div>
             <h2 style="text-align: center;">League of Legends Team Builder</h2>
@@ -76,6 +79,7 @@
             </table>
         </div>
     </section>
+    <div class='unmute' onclick="document.getElementById('dancenow').muted = !document.getElementById('dancenow').muted;$(this).toggleClass('mute')"></div>
     <footer>Created by Brian Nguyen at brianacnguyen@gmail.com</footer>
 </body>
 

@@ -54,3 +54,16 @@ footer {
     text-shadow: 3px 4px 5px #000;
     text-align: center;
 }
+.unmute{
+    margin-left: auto;
+    margin-right: auto;
+  background-image: url(http://franriavilla.in/images/unmute.png);
+  background-size: cover;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  }
+
+.mute{
+  background-image: url(http://franriavilla.in/images/mute.png);
+  }
