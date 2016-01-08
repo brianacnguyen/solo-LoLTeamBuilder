@@ -22,10 +22,10 @@
       <source src="data/bg.mp3" />
     </audio>  
     <section class="bg">
-        <div>
+        <div ng-controller="ChampsController">
             <h2 style="text-align: center;">League of Legends Team Builder</h2>
             <br>
-            <table align="center" border="0" cellpadding="1" cellspacing="1" ng-controller="ChampsController">
+            <table align="center" border="0" cellpadding="1" cellspacing="1">
                 <tbody class="center">
                     <tr>
                         <section class="frame">
@@ -39,7 +39,7 @@
                     <tr>
                         <td>Top</td>
                         <td>Jungle</td>
-                        <td>Mid</td>
+                        <td>Middle</td>
                         <td>Bottom</td>
                         <td>Support</td>
                     </tr>
@@ -76,7 +76,8 @@
                         </td>
                     </tr>
                 </tbody>
-            </table>
+            </table> <br>
+            <button ng-click="reset()">Reset</button>
         </div>
     </section>
     <div class='unmute' onclick="document.getElementById('dancenow').muted = !document.getElementById('dancenow').muted;$(this).toggleClass('mute')"></div>

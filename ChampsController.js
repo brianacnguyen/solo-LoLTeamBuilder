@@ -52,12 +52,13 @@ angular.module('app', [])
                 currentPosition = key + "Champs";
             }
         }
+        console.log(currentPosition);
         for (var k in $scope.data) {
             if (k === currentPosition) {
                 continue;
             } else {
                 var currentPos = $scope.data[k];
-                var copy = currentPos.slice();
+                var copy = JSON.parse(JSON.stringify(currentPos));
                 for (var i = 0; i < currentPos.length; i++) {
                     var currentChar = currentPos[i];
                     if (currentChar.image === currentImg) {
@@ -69,7 +70,15 @@ angular.module('app', [])
             }
         }
     };
-    dataRefresher(champs);
+    $scope.reset = function() {
+        dataRefresher(champs);
+        $scope.live.top = "data/images/Top_Placeholder.jpg";
+        $scope.live.jungle = "data/images/Jungle_Placeholder.jpg";
+        $scope.live.mid = "data/images/Mid_Placeholder.jpg";
+        $scope.live.bot = "data/images/Bot_Placeholder.jpg";
+        $scope.live.support = "data/images/Support_Placeholder.jpg";
+    };
+    $scope.reset();
     var allFriends = {};
     $scope.change = function(currentSelection) {
         var currentFriends = friendsSort(currentSelection);
@@ -82,6 +91,5 @@ angular.module('app', [])
         var newFriends = populateFriends(allFriends);
         dataRefresher(newFriends);
         removeDuplicates(currentSelection);
-        console.log($scope.data);
-    }
+    };
 });
