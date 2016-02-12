@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>League of Legends- Team Builder</title>
+</head>
+
+<body ng-app="app">
+    <!--    DEPENDENCIES    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!--    STYLES            -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--    DATA            -->
+    <script src="assets/data.js"></script>
+    <!--    Angular Controller            -->
+    <script src="app/ChampsController.js"></script>
+    <!-- -->
+    <audio id="dancenow" autoplay loop>
+      <source src="assets/bg.mp3" />
+    </audio>  
+    <section class="bg">
+        <div ng-controller="ChampsController">
+            <h2 style="text-align: center;">League of Legends Team Builder</h2>
+            <br>
+            <table align="center" border="0" cellpadding="1" cellspacing="1">
+                <tbody class="center">
+                    <tr>
+                        <section class="frame">
+                            <td><img class="champ-image" src={{live.top}} /></td>
+                        </section>
+                        <td><img class="champ-image" src={{live.jungle}} /></td>
+                        <td><img class="champ-image" src={{live.mid}} /></td>
+                        <td><img class="champ-image" src={{live.bot}} /></td>
+                        <td><img class="champ-image" src={{live.support}} /></td>
+                    </tr>
+                    <tr>
+                        <td>Top</td>
+                        <td>Jungle</td>
+                        <td>Middle</td>
+                        <td>Bottom</td>
+                        <td>Support</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="top-champions" ng-model="live.top" ng-change="change(live.top)">
+                                <option value="data/images/Top_Placeholder.jpg"> Select a Top Champion </option>
+                                <option ng-repeat="champ in data.topChamps" value="{{champ.image}}">{{champ.name}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="jungle-champions" ng-model="live.jungle" ng-change="change(live.jungle)">
+                                <option value="data/images/Jungle_Placeholder.jpg"> Select a Jungle Champion </option>
+                                <option ng-repeat="champ in data.jungleChamps" value="{{champ.image}}">{{champ.name}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="mid-champions" ng-model="live.mid" ng-change="change(live.mid)">
+                                <option value="data/images/Mid_Placeholder.jpg"> Select a Middle Champion </option>
+                                <option ng-repeat="champ in data.midChamps" value="{{champ.image}}">{{champ.name}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="bot-champions" ng-model="live.bot" ng-change="change(live.bot)">
+                                <option value="data/images/Bot_Placeholder.jpg"> Select a Bottom Champion </option>
+                                <option ng-repeat="champ in data.botChamps" value="{{champ.image}}">{{champ.name}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="support-champions" ng-model="live.support" ng-change="change(live.support)">
+                                <option value="data/images/Support_Placeholder.jpg"> Select a Support Champion </option>
+                                <option ng-repeat="champ in data.supportChamps" value="{{champ.image}}">{{champ.name}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> <br>
+            <button ng-click="reset()">Reset</button>
+        </div>
+    </section>
+    <div class='unmute' onclick="document.getElementById('dancenow').muted = !document.getElementById('dancenow').muted;$(this).toggleClass('mute')"></div>
+    <footer>Created by Brian Nguyen at brianacnguyen@gmail.com</footer>
+</body>
+
+</html>

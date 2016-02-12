@@ -1,0 +1,26 @@
+{
+  "name": "league-of-legends-team-builder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Brian August Nguyen",
+  "devDependencies": {
+    "browser-sync": "^1.5.7",
+    "gulp": "^3.8.5",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.6.3",
+    "gulp-nodemon": "^1.0.4",
+    "gulp-shell": "^0.2.7",
+    "jshint-stylish": "^0.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "jwt-simple": "^0.2.0",
+    "morgan": "^1.1.1",
+    "request": "^2.36.0"
+  }
+}
